@@ -2,7 +2,7 @@ TARGET=go-icecream
 MAIN=./cmd/icecream/main.go
 
 build:
-	@go build -o bin/${TARGET} ./cmd/icecream/main.go
+	@go build -o bin/${TARGET} ${MAIN}
 
 run: build
 	@./bin/${TARGET}
